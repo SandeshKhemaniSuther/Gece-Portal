@@ -1,0 +1,43 @@
+/* Tailwind CSS directives (Ensure these are at the top) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles from the original HTML */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f9fc; /* Light background similar to reference */
+}
+/* Custom scrollbar for better look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #90cdf4;
+    border-radius: 10px;
+}
+.main-card {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 5px 15px -5px rgba(0, 0, 0, 0.04);
+}
+.input-field {
+    border-color: #e2e8f0;
+    transition: border-color 0.3s;
+}
+.input-field:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+/* Loading spinner CSS */
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #4299e1;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
