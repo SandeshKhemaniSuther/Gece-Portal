@@ -88,7 +88,7 @@ const App = () => {
     const isGlobalLoading = loading || isAuthLoading || uploading;
 
     useEffect(() => {
-        if (isGlobalLoading) { document.title = "Processing... | GECE Mithi"; } else { document.title = user ? "Student Portal | GECE Mithi" : "Login | GECE Mithi"; }
+        if (isGlobalLoading) { document.title = "Student Portal | GECE Mithi"; } else { document.title = user ? "Student Portal | GECE Mithi" : "Login | GECE Mithi"; }
     }, [isGlobalLoading, user]);
 
     useEffect(() => {
