@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// Sahi tareeqa: react() function ko call karna zaroori hai
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react()], // ✅ CORRECT (brackets zaroori hain)
 })
